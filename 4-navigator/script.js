@@ -1,8 +1,12 @@
-let positionLat = 10;
-let positionLong = 20;
+const money = 10;
 
-let addressLong = 40;
-let addressLat = 60;
+if(money > 50) {
+    console.log('Можем купить наш продукт!');
+} else if(money > 5) {
+    console.log('Куплен mini продукт');
+}
+else {
+    console.log('Не хватает баланса!');
+}
 
-let sum = Math.sqrt(Math.pow(addressLat - positionLat, 2) + Math.pow(addressLong - positionLong, 2));
-console.log(sum);
+console.log('Итог');
