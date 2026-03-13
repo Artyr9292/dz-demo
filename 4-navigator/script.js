@@ -1,20 +1,15 @@
+const secretNumber = '7';
 
-//Задача
-/*
-    Вася положил 12 000$ на вклад 7% годовых с капитализацией 1 раз в месяц. 
-    Вывести в консоль, сможет ли он купить дом за 13 500$ через 2 года после снятия 
-    вклада и остаток после покупки.
-*/
-
-const deposit = 10000; //12000
-const rate = 0.07;
-const depositLength = 24;
-const houseCost = 13500;
-
-//Расчет накоплений по формуле сложных процентов.
-const res = deposit * (1 + rate / 12) ** 24;
-if(res > houseCost) {
-    console.log(`Мы накопили: ${res}. Можем купить. Остаток ${res - houseCost}`);
-} else {
-    console.log(`Мы накопили: ${res}. Купить не сможем((( `);
+if(Number(secretNumber) === 7) {
+    console.log('Угадал строго');
 }
+
+if(secretNumber == 7) {
+    console.log('Угадал не строго');
+}
+
+const q = Number(prompt('Введите число'));
+if(q === 7) {
+    console.log(12);
+}
+
