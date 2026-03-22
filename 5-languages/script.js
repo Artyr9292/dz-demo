@@ -1,17 +1,11 @@
-let lang = 'lang_ru';
-let lang2 = 'lang_en';
-let lang3 = 'lang_germany';
-switch (lang) {
-  case "lang_ru":
-    console.log("Включить русский язык");
-    break;
-  case "lang_en":
-    console.log("Включить английский язык");
-    break;
-  case "lang_germany":
-    console.log("Включить немецкий язык");
-    break;
-  default:
-    console.log("Sorry, we are out of ");
-}
+const isAdmin = true;
+const canWrite = true;
+
+console.log(`Системный файл ${isAdmin && canWrite}`);
+console.log(`Обычный файл ${isAdmin || canWrite}`);
+console.log(`Инвертируем права админа ${!isAdmin}`);
+
+const isEdited = true;
+const isSuperAdmin = true;
+console.log(`Системный файл с редактированем ${isAdmin && canWrite && (!isEdited || isSuperAdmin)}`);
 
