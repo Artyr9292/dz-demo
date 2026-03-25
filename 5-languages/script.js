@@ -17,3 +17,6 @@ const canBuy = (balance > 1000 || bonusBalance > 100)
     && !isExist
     && isSelling;
 console.log(`Могу купить игру: ${canBuy ? 'Да' : 'Нет'}`);
+
+
+
