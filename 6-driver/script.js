@@ -1,4 +1,5 @@
 //Урок 6.9. Домашнее задание - Булева логика
+
 let hasLicence = true;
 let ages = 16;
 let isDrunk = false;
