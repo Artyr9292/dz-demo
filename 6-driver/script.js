@@ -1,7 +1,25 @@
-//Урок 6.9. Домашнее задание - Булева логика
+function logName() {
+    console.log(`Мое имя Антон`);
+}
 
-let hasLicence = true;
-let ages = 17;
-let isDrunk = false;
+const a = logName();
+logName();
 
-console.log(hasLicence > true || ages > 18 || isDrunk > true);
+
+function logNames(names, surname) {
+    console.log(`Мое имя ${names} ${surname}`);
+}
+logNames('Антон', 'Ларичев');
+
+
+function countDepositSum(depositInUSD, month, rate) {
+    return depositInUSD * (1 + rate / 12) ** month;
+    
+}
+
+const example1 = countDepositSum(1000, 24, 0.12);
+console.log(example1, 2);
+
+console.log(countDepositSum(1000, 48, 0.10));
+
+
