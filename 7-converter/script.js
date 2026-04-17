@@ -1,9 +1,32 @@
-const roles = ['user', 'admin', 'manager', 'superuser'];
+const tasks = ['Задача 1'];
 
-const url = 'auth/user/login';
-const res = url.split('/');
-console.log(res);
+function Add(task) {
+    tasks.push(task);
+}
 
-console.log(roles.join('-'));
+function Remove(task) {
+    const index = tasks.indexOf(task);
+    if(index === -1) {
+        return;
+    }
+    tasks.splice(index, 1);
+}
 
+function Prioritize(task) {
+    const index = tasks.indexOf(task);
+    if(index === -1) {
+        return;
+    }
+    const oldTask = tasks[index];
+    tasks.splice(index, 1);
+    tasks.unshift(oldTask);
+}
+
+Add('Задача 2');
+Add('Задача 3');
+console.log(tasks);
+Remove('Задача 2');
+console.log(tasks);
+Prioritize('Задача 3');
+console.log(tasks);
 
